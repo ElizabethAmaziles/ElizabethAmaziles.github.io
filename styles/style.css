@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: Bonello;
+    src: url('./font/Bonello-Regular.otf');
+}
+
+:root{
+    --purple1:#96305A;
+    --pink1: #B06483;
+    --pink2 : #CB98AD;
+    --pink3: #E5CBD6;
+
+    --black: #000;
+    --white: #fff;
+
+    --font-pri: "Arial", sans-serif;;
+    --font-sec: Bonello;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Arial", sans-serif;
+
+
+    text-rendering: geometricPrecision;
+    image-rendering: optimizeQuality;
+
+    background: var(--pink2);
+}
+
+header{
+    font-family: var(--font-sec);
+    font-size: 18px;
+
+    color: var(--white);
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header p{
+    font-family: var(--font-pri);
+}
+
+header img{
+    display: inline;
+    margin: 10px;
+    min-width: 256px;
+    max-width: 512px;
+}
+
+main{
+    border-radius: 10px;
+
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+#links ul{
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#links ul li a{
+    display:block;
+
+    border: 3px solid var(--pink2);
+    background-color: var(--white);
+    border-radius: 25px;
+    color: var(--black);
+    
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.4);
+
+    min-height: 60;
+    max-height: 100px;
+    padding: 15px 10px;
+    transition: 0.3s;
+}
+
+#links ul li a:hover{
+    border-color: var(--purple1);
+    background-color: var(--white) transparent  ;
+    color: var(--white);
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 16px;
+    
+    color: var(--white);
+}
+
